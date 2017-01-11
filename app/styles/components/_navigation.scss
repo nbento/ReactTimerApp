@@ -1,0 +1,21 @@
+//.top-bar ul »»» é uma formatação do Foundation
+.top-bar,
+.top-bar ul {
+	background-color: $nav-background;
+	border: 1px solid black;
+}
+
+//
+.top-bar {
+	//Altera a cor da frase no top, left, 'React Timer App'
+	.menu-text {
+		color: $nav-text-color;
+	}
+
+	//NO LINK top, right,  'Created by Mice'
+	.menu > .menu-text > a {
+		display: inline;
+		padding: 0;
+	} 
+
+}
