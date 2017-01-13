@@ -7,7 +7,7 @@ module.exports = function(config)
 		browsers: ['Chrome'],
 		singleRun: true,
 		frameworks: ['mocha'], 					//test framework	
-		files: ['app/tests/**/*.tests.jsx'],
+		files: ['app/tests/**/*.tests.jsx'],	//which test filw
 		preprocessors: {
 			'app/tests/**/*.tests.jsx': ['webpack', 'sourcemap']
 		},

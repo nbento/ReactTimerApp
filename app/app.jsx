@@ -1,6 +1,5 @@
 var React 		= require('react');
 var ReactDOM 	= require('react-dom');
-
 //.......... ES5
 /*	var Route 		= require('react-router').Route;
 	var Router  	= require('react-router').Router;
@@ -9,9 +8,10 @@ var ReactDOM 	= require('react-dom');
 */	
 //.......... ES6
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-
 //.......... 
 var Main 	= require('Main');   
+var Timer 	= require('Timer'); 
+var Countdown 	= require('Countdown'); 
 
 
 //Load foundation (CARREGA UM FILE CSS DIRECTA/ NUM FILE JSX(!!!))  (Lec.51 ~10:00)
@@ -30,7 +30,8 @@ ReactDOM.render(
 			
 			<Router history={hashHistory}>
 				<Route path="/" component={Main}>
-					
+					<Route path="countdown" component={Countdown}/>
+					<IndexRoute component={Timer}/>
 		  		</Route>
 			</Router>,
 

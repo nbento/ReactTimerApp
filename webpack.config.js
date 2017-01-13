@@ -31,6 +31,8 @@ module.exports = {
 		alias: { 				//path das components a criar; ao indicar o path aqui, basta indicar o nome da component, sem path
 				Main: 	 'app/components/Main.jsx',
 				Navigation: 	 'app/components/Navigation.jsx',
+				Timer: 	 		'app/components/Timer.jsx',
+				Countdown: 	 	'app/components/Countdown.jsx',
 				applicationStyles:'app/styles/app.scss' 		//Lec.58
 				
 		},
