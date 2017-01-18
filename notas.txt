@@ -1,5 +1,4 @@
 N:\E\www\React\UdemyReact\Exercicios\ReactTimer
 cd N:/E/www/React/UdemyReact/Exercicios/ReactTimer/
 
-16.13
 
