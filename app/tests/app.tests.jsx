@@ -13,9 +13,11 @@ var expect = require('expect');
 
 //..........2º Teste - describe (Lec.68 17.09)
 //com describe, devia dar info. mais 'human readable', mas isso não acontece;
+/*
 describe('App', () => {
 	it('should properly run tests', () => {
 		expect(1).toBe(1);
 
 	});
 });
+*/

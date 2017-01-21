@@ -12,6 +12,7 @@ describe('Clock', () => {
 		expect(Clock).toExist();
 	});
 	*/
+	/*
 	describe('render', () => {
 		it('should render clock to output!', () => {
 			var clock = TestUtils.renderIntoDocument(<Clock totalSeconds={62}/>);
@@ -23,6 +24,7 @@ describe('Clock', () => {
 			expect(actualText).toBe('01:02'); 				
 		});
 	});
+	*/
 	/*
 	describe('formatSeconds', () => {
 		it('should format seconds', () => {
