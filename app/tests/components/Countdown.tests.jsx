@@ -9,10 +9,10 @@ var Countdown = require('Countdown');
 
 describe('Countdown', () => {
 
-	it('Countdown should exist!', () => {
+	/*it('Countdown should exist!', () => {
 		expect(Countdown).toExist();
 
-	});
+	});*/
 		
 	/*it('should not call onSetCountdown if invalid seconds entered', () => {
 		var spy = expect.createSpy();
@@ -29,7 +29,7 @@ describe('Countdown', () => {
 });
 
 describe('handleSetCountdown', () => {
-
+/*
 	it('should set state to started and countdown', (done) => {
 		
 		var countdown = TestUtils.renderIntoDocument(<Countdown/>);
@@ -43,8 +43,9 @@ describe('handleSetCountdown', () => {
 			done();
 		}, 1001)
 	});
+*/	
 	//Lec. 75
-	it('should set state to 0', (done) => {
+/*	it('should set state to 0', (done) => {
 		
 		var countdown = TestUtils.renderIntoDocument(<Countdown/>);
 		countdown.handleSetCountdown(1);
@@ -57,5 +58,5 @@ describe('handleSetCountdown', () => {
 			done();
 		}, 3001)
 	});
-	
+*/	
 });
