@@ -24,17 +24,31 @@ var Controls = React.createClass(
 		var renderStartStopButton = () => {
 			if (countdownStatus === 'started')
 			{
-				return (<button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>)
+				return (<div>
+						<button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>
+						<button className="button alert hollow" onClick={this.onStatusChange('stopped')}>Clear</button>
+					</div>)
 			
 			} else if (countdownStatus === 'paused') {
 				
-				return (<button className="button primary" onClick={this.onStatusChange('started')}>Start</button>)
+				return (<div>
+							<button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
+							<button className="button alert hollow" onClick={this.onStatusChange('stopped')}>Clear</button>
+						</div>)
+			
+			//========================= NR
+			//tIMER clear »»» 
+			} else if (countdownStatus === 'stopped') {	
+				return (<div>
+						<button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
+						<button className="button alert hollow" onClick={this.onStatusChange('stopped')}>Clear</button>
+					</div>)
 			}	
 		}
 
 		return (<div className="controls">
 					{renderStartStopButton()}
-					<button className="button alert hollow" onClick={this.onStatusChange('stopped')}>Clear</button>
+					
 				</div>)
 	}
 });

@@ -22,8 +22,8 @@ var Countdown = React.createClass({
 	componentDidUpdate: function (prevProps, prevState)
 	{
 		//console.log("componentDidUpdate !!!");
-		console.log("componentDidUpdate   prevState.countdownStatus:::" + prevState.countdownStatus);
-		console.log("componentDidUpdate   this.state.countdownStatus:::" + this.state.countdownStatus);
+		//console.log("componentDidUpdate   prevState.countdownStatus:::" + prevState.countdownStatus);
+		//console.log("componentDidUpdate   this.state.countdownStatus:::" + this.state.countdownStatus);
 
 		if(this.state.countdownStatus !== prevState.countdownStatus)
 		{
@@ -49,22 +49,22 @@ var Countdown = React.createClass({
 	//............'fired right After the component get's changes in props or state
 	componentWillUpdate: function(nextProps, nextState)
 	{
-		console.log("componentWillUpdate!");
+		//console.log("componentWillUpdate!");
 	},
 	//............'fired right BEFORE the component get's inserted in the DOM' 
 	componentWillMount: function()
 	{
-		console.log("componentWillMount!");
+		//console.log("componentWillMount!");
 	},
 	//............'fired right AFTER the component get's inserted in the DOM' 
 	componentDidMount: function()
 	{
-		console.log("componentDidMount!");
+		//console.log("componentDidMount!");
 	},
 	//............'fired right BEFORE the component get's removed from the DOM' 
 	componentWillUnmount: function()
 	{
-		console.log("componentWillUnmount!");
+		//console.log("componentWillUnmount!");
 		clearInterval(this.timer);				// == ao que está em switch case 'stopped'
 		this.timer = undefined;
 	},
@@ -124,6 +124,8 @@ var Countdown = React.createClass({
 							onStatusChange={this.handleStatusChange}
 							countdownStatus={countdownStatus}	
 						/>)	
+			
+			// ===  'stopped'	
 			} else {
 				return (<CountdownForm onSetCountdown={this.handleSetCountdown}/>)
 			}	
@@ -145,7 +147,7 @@ var Countdown = React.createClass({
 		}	
 
 		return (<div>
-					<h1>Countdown!!!</h1>
+					<h1 className="page-title">Title Countdown</h1>
 					<Clock totalSeconds={count} />
 					{renderControlArea()}
 					

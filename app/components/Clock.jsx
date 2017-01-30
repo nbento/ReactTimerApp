@@ -27,6 +27,18 @@ var Clock = React.createClass({
 
 		return minutes + ':' + seconds;
 	},
+	//............'fired right After the component get's changes in props or state
+	componentDidUpdate: function(nextProps, nextState)
+	{
+		//console.log("CLOCK componentDidUpdate  totalSeconds:::" + this.props.totalSeconds);
+		//console.log("CLOCK componentDidUpdate  ==================");
+	},
+	//............'fired right After the component get's changes in props or state
+	componentWillReceiveProps: function(newProps)
+	{
+		//console.log("CLOCK componentWillReceiveProps  this.totalSeconds:::" + this.props.totalSeconds);
+		//console.log("CLOCK componentWillReceiveProps  newProps.totalSeconds:::" + newProps.totalSeconds);
+	},
 	//...........
 	render: function()
 	{
