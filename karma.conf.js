@@ -7,7 +7,12 @@ module.exports = function(config)
 		browsers: ['Chrome'],
 		singleRun: true,
 		frameworks: ['mocha'], 					//test framework	
-		files: ['app/tests/**/*.tests.jsx'],	//which test file
+		files: [
+				'node_modules/jquery/dist/jquery.min.js', 					//Lec. 83
+				'node_modules/foundation-sites/dist/foundation.min.js',    //Lec. 83
+				'app/tests/**/*.tests.jsx'
+
+				],	//which test file
 		preprocessors: {
 			'app/tests/**/*.tests.jsx': ['webpack', 'sourcemap']
 		},

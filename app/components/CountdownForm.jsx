@@ -8,6 +8,8 @@ var CountdownForm = React.createClass({
 		e.preventDefault();
 		var strSeconds = this.refs.seconds.value;
 		//..........
+		console.log('CountdownForm  input total', $('input').length);
+		//..........
 		//[0-9]* »»» MULTIPLE CHARACTERS ENTRE 0 E 9
 		//^[0-9] »»» MUST START COM UM CHARACTER ENTRE 0 E 9 
 		//[0-9]$ »»» MUST END COM UM CHARACTER ENTRE 0 E 9 

@@ -1,4 +1,6 @@
 var webpack = require('webpack'); 	//alteração para Foundation
+//var Lec. 83, alt. para Foundation SASS
+var path = require('path'); 		//path »»» built in to node, no adtional instalation required
 
 module.exports = {
 	//entry: './app/app.jsx',
@@ -54,5 +56,10 @@ module.exports = {
 			}
 		]
 	},
+	sassLoader: { ////var Lec. 83, alt. para Foundation SASS
+		includePaths: [
+			path.resolve(__dirname, './node_modules/foundation-sites/scss')
+		]	
+	},	
 	devtool: 'cheap-module-eval-source-map'  //Source Maps (debugging)
 };	
